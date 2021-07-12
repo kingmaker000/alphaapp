@@ -72,8 +72,15 @@ class SectionPage extends StatelessWidget {
                   ),
                 ),
                 Divider(),
-                Container(width: double.infinity,
-                  child: TextButton(onPressed: (){},child: Text('Select Vendor',style: TextStyle(color: Colors.black),),),
+                Container(
+                  width: double.infinity,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Select Vendor',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                  ),
                 ),
               ],
             ),
