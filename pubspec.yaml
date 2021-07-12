@@ -23,8 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  excel: ^1.1.5
-  path: ^1.8.0
+  #excel: ^1.1.5
+  #path: ^1.8.0
+  provider: ^5.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -67,6 +68,9 @@ flutter:
      - family: ZenTokyoZoo
        fonts:
          - asset: assets/fonts/ZenTokyoZoo-Regular.ttf
+     - family: Uchen
+       fonts:
+         - asset: assets/fonts/Uchen-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
