@@ -1,11 +1,14 @@
 import 'package:alpha_app/dummy_data/companydata.dart';
 import 'package:alpha_app/pages/home_page.dart';
-import 'package:alpha_app/pages/section_of_service.dart';
-import 'package:alpha_app/pages/typeof_services.dart';
+import 'package:alpha_app/pages/profile_page.dart';
+import 'package:alpha_app/pages/tab_screen.dart';
+import 'package:alpha_app/pages/types_of_services.dart';
+import 'package:alpha_app/pages/vendors_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import './pages/login_page.dart';
 import './pages/create_account.dart';
+import './pages/profile_page.dart';
 
 void main(){
   runApp(AlphaApp());
@@ -26,10 +29,12 @@ class AlphaApp extends StatelessWidget {
         LoginPage.routename:(cntx) => LoginPage(),
         CreateAccount.routename:(cntx)=> CreateAccount(),
         HomePage.routename:(cntx) => HomePage(),
-        TypeOfServices.routename:(cntx) =>TypeOfServices(),
-        SectionPage.routename:(cbtx) => SectionPage()
+        TypesOfServices.routename:(cntx) => TypesOfServices(),
+        VendorsListPage.routename:(cntx) =>VendorsListPage(),
+        ProfilePage.routename:(cntx) =>ProfilePage()
       },
-      home: LoginPage(),
+      home: TabScreen(),
+
     )
     );
   }
